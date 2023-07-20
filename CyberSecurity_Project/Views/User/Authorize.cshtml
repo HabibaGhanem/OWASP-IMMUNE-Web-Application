@@ -1,0 +1,114 @@
+﻿@model CyberSecurity_Project.Models.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+    <title> Euphoria </title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #a8a7a7;
+        }
+
+        .form-box {
+            width: 380px;
+            height: 480px;
+            position: relative;
+            margin: 6% auto;
+            background: #ffffff;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+
+        .input-group {
+            top: 50px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+
+        .submit-btn {
+            width: 50%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: #49cbda;
+            border: 0;
+            outline: none;
+        }
+
+
+
+        #search_form {
+            left: 50px;
+        }
+
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            background-color: #49cbda;
+            color: white;
+            font-size: 50px;
+            text-align: left;
+            padding: 20px;
+            font-family: 'Finger Paint';
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            background-color: #49cbda;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Finger Paint';
+        }
+    </style>
+
+</head>
+<body BGCOLOR="#eeeeee">
+    <h1>Euphoria</h1>
+    <br />
+    <h2>Authentication</h2>
+    <div class="form-box">
+
+        <div id="search_form" class="input-group">
+            <br> <br> <br>
+            <form method="post">
+                <input name="inputCode" class="input-field" placeholder="Enter security code.."/><br /><br /><br />
+                <input type="submit" class="submit-btn" value="Submit" />
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
